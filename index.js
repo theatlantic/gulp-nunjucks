@@ -1,7 +1,7 @@
 'use strict';
 const gutil = require('gulp-util');
 const through = require('through2');
-const nunjucks = require('nunjucks');
+const nunjucks = require('@theatlantic/nunjucks');
 
 function compile(data, opts) {
 	return through.obj(function (file, enc, cb) {
